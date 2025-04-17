@@ -13,20 +13,6 @@ const config = {
 
     return config;
   },
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: process.env.STARTPAGE,
-        permanent: false,
-      },
-      {
-        source: '/en/platform/overview',
-        destination: process.env.STARTPAGE,
-        permanent: false,
-      }
-    ];
-  },
   devIndicators: {
     appIsrStatus: false,
     buildActivity: false,
