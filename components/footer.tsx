@@ -7,7 +7,7 @@ const Version = Date.now();
 
 const Footer: React.FC = () => {
   return (
-    <footer className="flex flex-col mt-0 md:mt-12 items-center p-5 bg-gray-100 border-t border-gray-300 pb-5">
+    <footer className="flex flex-col mt-0 md:mt-12 items-center px-5 bg-gray-100 border-t border-gray-300 pb-5">
       <div className="container md:flex sm:flex-row  justify-between gap-5 items-center mb-8 max-w-[1100px]">
         <div className="flex-1 px-2 mt-8 justify-center">
           <h4 className="font-semibold mb-3">e-INFRA CZ</h4>
@@ -67,7 +67,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="container md:flex sm:flex-row sm:mt-8 justify-center items-center gap-4 mt-8 max-w-[1100px] rounded-md bg-slate-100">
+      <div className="container md:flex sm:flex-row sm:mt-4 justify-center items-center gap-4 mt-4 max-w-[1100px] rounded-md bg-slate-100">
         <img
           src="/img/logos/footer-partner-logos.svg"
           alt="CESNET Logo"
