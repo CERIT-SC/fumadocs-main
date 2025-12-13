@@ -13,10 +13,10 @@ const config = {
 
     return config;
   },
-  devIndicators: {
-    appIsrStatus: false,
-    buildActivity: false,
+  outputFileTracingIncludes: {
+    "/api/**/*": ["./node_modules/**/*.wasm"]
   },
+  serverExternalPackages: ["tiktoken", "onnxruntime-node"],
 };
 
 export default withMDX(config);

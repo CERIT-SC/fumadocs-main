@@ -1,6 +1,6 @@
-import { docs, meta } from '@/.source';
-import { createMDXSource } from 'fumadocs-mdx';
+import { docs } from 'fumadocs-mdx:collections/server';
 import { loader } from 'fumadocs-core/source';
+import type { InferMetaType, InferPageType } from 'fumadocs-core/source';
 
 export const source = loader({
   baseUrl: '/docs',
@@ -9,5 +9,8 @@ export const source = loader({
       // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Inevitable
       return icon as any;
   },
-  source: createMDXSource(docs, meta),
+  source: docs.toFumadocsSource(),
 });
+
+export type Page = InferPageType<typeof source>;
+export type Meta = InferMetaType<typeof source>;
